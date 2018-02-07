@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Master Mind - Mario Ferrer Nieto</title>
+    <script src="js/jquery-3.2.1.js" charset="utf-8"></script>
+    <script defer src="js/mastermind.js" charset="utf-8"></script>
+    <script defer src="js/code.js" charset="utf-8"></script>
+    <script src="js/jquery-ui.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.structure.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>Master Mind</h1>
+
+    <div id="menu">
+      <h3>GANASTE LA PARTIDA</h3>
+      <p class="ui-button ui-widget ui-corner-all" id="reiniciar">Reiniciar</p>
+      <p class="ui-button ui-widget ui-corner-all" id="salir">Salir</p>
+    </div>
+
+    <div class="game">
+
+      <div id="board">
+        <svg id="jugada" width="640" height="80">
+          <circle id="selectedOne" cx="40" cy="40" r="35" fill="gray" opacity="0.75" />
+          <circle id="selectedTwo" cx="120" cy="40" r="35" fill="gray" opacity="0.75" />
+          <circle id="selectedThree" cx="200" cy="40" r="35" fill="gray" opacity="0.75" />
+          <circle id="selectedFour" cx="280" cy="40" r="35" fill="gray" opacity="0.75" />
+
+          <circle id="checkedOne" cx="360" cy="40" r="20" fill="gray" opacity="0.75" />
+          <circle id="checkedTwo" cx="440" cy="40" r="20" fill="gray" opacity="0.75" />
+          <circle id="checkedThree" cx="520" cy="40" r="20" fill="gray" opacity="0.75" />
+          <circle id="checkedFour" cx="600" cy="40" r="20" fill="gray" opacity="0.75" />
+          Sorry, your browser does not support inline SVG.
+        </svg>
+
+        <div id="last-turns">
+        </div>
+      </div>
+
+      <div class="selectors">
+        <svg id="checkColors" height="80" width="80">
+          <circle cx="40" cy="40" stroke="white" stroke-width="4" r="30"fill="#7AD6ED" opacity="0.7" />
+          <text fill="white" font-size="46" font-family="Verdana" x="20" y="60">&#10004;</text>
+        </svg>
+
+        <svg class="colors" id="red" width="80" height="80">
+          <circle cx="40" cy="40" r="35"fill="red" /> Sorry, your browser does not support inline SVG.
+        </svg>
+
+        <svg class="colors" id="white" width="80" height="80">
+          <circle cx="40" cy="40" r="35"fill="white" /> Sorry, your browser does not support inline SVG.
+        </svg>
+
+        <svg class="colors" id="black" width="80" height="80">
+          <circle cx="40" cy="40" r="35"fill="black" /> Sorry, your browser does not support inline SVG.
+        </svg>
+
+        <svg class="colors" id="yellow" width="80" height="80">
+          <circle cx="40" cy="40" r="35"fill="yellow" /> Sorry, your browser does not support inline SVG.
+        </svg>
+
+        <svg class="colors" id="orange" width="80" height="80">
+          <circle cx="40" cy="40" r="35"fill="orange" /> Sorry, your browser does not support inline SVG.
+        </svg>
+
+        <svg class="colors" id="brown" width="80" height="80">
+          <circle cx="40" cy="40" r="35"fill="brown" /> Sorry, your browser does not support inline SVG.
+        </svg>
+
+        <svg class="colors" id="blue" width="80" height="80">
+          <circle cx="40" cy="40" r="35"fill="blue" /> Sorry, your browser does not support inline SVG.
+        </svg>
+
+        <svg class="colors" id="green" width="80" height="80">
+          <circle cx="40" cy="40" r="35"fill="green" /> Sorry, your browser does not support inline SVG.
+        </svg>
+
+        <div class="intento">
+          <p>Nº Intentos:</p>
+          <p id="intentos">0</p>
+        </div>
+        <p class="button" id="start">Reiniciar</p>
+      </div>
+
+    </div>
+  </body>
+</html>
